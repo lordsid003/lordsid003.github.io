@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>AR.js Example</title>
+	<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+	<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+<body>
+	<a-scene embedded arjs>
+		<a-marker preset="hiro" emitevents="true" cursor="rayOrigin: mouse">
+			<a-box position="0 0.5 0" material="color: red;"></a-box>
+		</a-marker>
+		<a-entity camera></a-entity>
+	</a-scene>
+
+	<script>
+		const box = document.querySelector('a-box');
+
+		const marker = document.querySelector('a-marker');
+		marker.addEventListener('click', () => {
+			box.setAttribute('rotation', '0 45 0');
+		});
+	</script>
+</body>
+</html>
+
