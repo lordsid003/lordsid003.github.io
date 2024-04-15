@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jersey+10&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --background-color: #1F1F1F;
+    --font-gray: rgba(255, 255, 255, 0.5);
+    --aqua-glow: rgb(0, 213, 255);
+    --low-transparency: rgba(255, 255, 255, 0.05);
+    --white: rgba(255, 255, 255, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.navbar {
+    line-height: 4rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1vw;
+}
+
+.navbar > ul {
+    display: flex;
+    list-style: none;
+    gap: 3vw;
+    align-items: center;
+    color: var(--font-gray);
+}
+
+.logo {
+    width: 8vw;
+    position: absolute;
+    top: 1vw;
+    left: 3vw;
+}
+
+#resume > button {
+    padding: 0.8vw 1.5vw;
+    background-color: var(--low-transparency);
+    border: 1px solid var(--aqua-glow);
+    box-shadow: 0 0 3px var(--aqua-glow);
+    outline: none;
+    border-radius: 5px;
+    color: var(--white);
+    position: absolute;
+    top: 2vw;
+    right: 3vw;
+    cursor: pointer;
+}
+
+#resume > button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 5px var(--aqua-glow);
+}
+
+main {
+    display: flex;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    position: relative;
+}
+
+main > .imageContainer {
+    position: relative;
+}
+
+main > .imageContainer > .star {
+    font-size: 45vw;
+    position: absolute;
+    top: 0;
+    left: -10vw;
+    background: linear-gradient(to right, aqua, 
+                    rgb(0, 132, 255), #8423cf, #44eeeb); 
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+}
+
+main > .imageContainer > .title {
+    position: absolute;
+    top: 15vw;
+    left: -6vw;
+    font-size: 5.5vw;
+    z-index: 1;
+    font-weight: 400;
+    color: var(--white);
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+}
+
+main > .imageContainer > .mainImg {
+    position: absolute;
+    z-index: 5;
+}
+
+main > .mainInfo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    top: 20vh;
+    left: 60%;
+    gap: 2vw;
+}
+
+main > .mainInfo > .title {
+    color: var(--aqua-glow);
+    font-weight: 400;
+    font-size: 2rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-family: "Jersey 10", sans-serif;
+}
+
+main > .mainInfo > ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--font-gray);
+    font-weight: 100;
+}
+
+main > .mainInfo > #connect {
+    width: 40%;
+    padding: 1rem 1.5rem;
+    color: var(--white);
+    background: linear-gradient(to right, rgba(47, 178, 193, 0.8), 
+    rgba(0, 132, 255, 0.8)); 
+    box-shadow: 0 0 3px var(--aqua-glow);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+main > .mainInfo > #connect:hover, 
+main > .mainInfo > #connect:focus {
+    background: linear-gradient(to right, rgba(47, 178, 193, 1), 
+    rgba(0, 132, 255, 1)); 
+    box-shadow: 0 0 5px var(--aqua-glow);
+}
+
+.about {
+    width: 100vw;
+    background: linear-gradient(to bottom, rgb(75, 149, 219),#5acdcb); 
+    position: absolute;
+    z-index: 10;
+    top: 88vh;
+    box-shadow: 0 0 10px var(--font-gray);
+    border-top-left-radius: 5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.about > .about-left {
+    margin-top: 2vw;
+    width: 50%;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+    gap: 1rem;
+}
+
+.about > .about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.about > .about-right > .imageContainer2 {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.about > .about-right > .imageContainer2 > .image {
+    width: 10vw;
+}
+
+.about > .about-right > .mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.about > .about-right > .mail > .info {
+    display: flex;
+    gap: 0.5vw;
+    align-items: center;
+}
