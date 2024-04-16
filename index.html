@@ -10,11 +10,12 @@
 <body>
     <nav class="navbar">
         <ul>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Socials</li>
+            <li class="active"><a href="#about">About</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Socials</a></li>
         </ul>
     </nav>
+    <div class="glow"></div>
     <img src="./assets/Logo.png" class="logo" />
     <a href="./assets/SiddharthVerma_Resume2024.pdf" id="resume" target="_blank"><button>Download Resume</button></a>
 
@@ -36,19 +37,80 @@
         </div>
     </main>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-left">
             <h1>ABOUT ME</h1>
-            <p>I'm a sophomore student at Maharaja Surajmal Institute Of Technology, New Delhi pursuing Bachelors in Technology in Computer Science & Engineering. I am really intrigued by App Development and Machine Learning.
+            <p>I'm a sophomore student at <span class="imp">Maharaja Surajmal Institute Of Technology, New Delhi </span> pursuing Bachelors in Technology in Computer Science & Engineering. My major domains of interest include <span class="imp">App Development & Machine Learning.</span>
             </p>
-            <p>< Positions of responsibility /></p>
+            <p class="customTags" >
+                <span class="material-symbols-outlined">
+                    school
+                </span>
+                < Positions of responsibility /></p>
             <ul>
-                <li>IEEE Sofware Lead</li>
-                <li>Head Of Artificial Intelligence Department, Geek Room</li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                    </span>
+                    IEEE Sofware Lead
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                    </span>
+                    Head Of Artificial Intelligence Department, Geek Room
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                    </span>
+                    Member of Design Committee, IIC Council
+                </li>
             </ul>
-            <p>< Experience /></p>
-            <p>I have participated in several Hackathons and have learnt a lot of technologies through them. I have won 4 Hackathons till now: CyberSecurity Hackathon by Delhi Police, HackAvensis by IEEE MSIT, Tech-a-Thon 3.0 by GDSC SRCASW and GDSC MSIT Innovation Challenge.</p>
-            <p>I am really interested in exploring CyberSecurity and Game Development domains as well. </p>
+            <p class="customTags" >
+                <span class="material-symbols-outlined">
+                    editor_choice
+                </span>
+                < Experience /></p>
+            <p>I have participated in several Hackathons and have learnt & explored various technologies and tools. I have mentored several teammates and enthusiasts with my skillset and appropriate collaborations. I am really interested in exploring CyberSecurity and Game Development domains as well.
+            <p class="customTags">
+                <span class="material-symbols-outlined">
+                    emoji_events
+                </span>
+                < Achievements />
+            </p>
+            <ul>
+                <li>
+                    <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                    </span>
+                    1st prize at CyberSecurity Hackathon by Delhi Police in West District, Delhi under CyberSecurity Awareness Program
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                    </span>
+                    1st prize at HackAvensis Hackathon by IEEE at MSIT
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                    </span>
+                    1st prize at Tech-a-thon 3.0 by GDSC Shaheed Rajguru College Of Applied Sciences For Women
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                    </span>
+                    Bagged 2nd position @GDSC Hackathon at MSIT
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                    </span>
+                    Got a tree planted by open-source contributions in HacktoberFest 2023
+                </li>
+            </ul>
         </div>
         <div class="about-right">
             <div class="imageContainer2">
@@ -58,7 +120,9 @@
                 </p>
             </div>
             <div class="mail">
-                <h2>Any queries, suggestions or discussions are highly valued.</h2>
+                <div class="title">
+                    Any queries, suggestions or discussions are highly appreciated.
+                </div>
                 <div class="info">
                     <span class="material-symbols-outlined">
                         mail
@@ -67,6 +131,7 @@
                 </div>
             </div>
         </div>
+        <img src="./assets/Logo.png" class="aboutLogo"/>
     </section>
 </body>
 </html>
