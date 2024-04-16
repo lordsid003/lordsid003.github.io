@@ -202,8 +202,8 @@ main > .mainInfo > #connect:focus {
     /* background-color: rgb(24, 21, 21); */
     background: linear-gradient(109.6deg, rgb(24, 31, 40) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
     position: absolute;
+    top: 43vw;
     z-index: 10;
-    top: 88vh;
     box-shadow: 0 0 15px var(--font-black);
     border-top-left-radius: 5vw;
     display: flex;
