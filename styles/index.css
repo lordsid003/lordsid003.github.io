@@ -350,6 +350,43 @@ main > .mainInfo > #connect:focus {
 }
 
 @media screen and (width < 450px) {
+    main > .imageContainer {
+        top: 26vh;
+    }
+    main > .imageContainer > .star {
+        font-size: 43vh;
+        top: 8vh;
+        left: -7vh;
+    }
+    main > .imageContainer > .mainImg {
+        width: 35vh;
+    }
+    main > .imageContainer > .title {
+        top: 23vh;
+        font-size: 5.5vh;
+        left: -5vh;
+    }
+    main > .mainInfo {
+        position: absolute;
+        top: 4vh;
+        left: 0%;
+        transform: translate(-8%, 0);
+        width: 70vw;
+        gap: 4vw;
+    }
+    main > .mainInfo > .title {
+        font-size: 7vw;
+    }
+    main > .mainInfo > #connect {
+        padding: 2.5vw 3vw;
+        font-size: 2.5vw;
+        align-self: center;
+        margin-top: 2vh;
+    }
+    main > .mainInfo > ul {
+        font-size: 2.5vw;
+        letter-spacing: 0.1vw;
+    }
     .about {
         top: 80vh;
         padding-bottom: 18vh;
