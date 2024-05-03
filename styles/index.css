@@ -353,6 +353,7 @@ main > .mainInfo > #connect:focus {
 @media screen and (width < 450px) {
     main > .imageContainer {
         top: 26vh;
+        margin-top: 1.5vh;
     }
     main > .imageContainer > .star {
         font-size: 43vh;
