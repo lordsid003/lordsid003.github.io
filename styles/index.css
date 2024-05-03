@@ -352,7 +352,7 @@ main > .mainInfo > #connect:focus {
 
 @media screen and (width < 450px) {
     main > .imageContainer {
-        top: 28vh;
+        top: 30vh;
     }
     main > .imageContainer > .star {
         font-size: 43vh;
@@ -374,7 +374,7 @@ main > .mainInfo > #connect:focus {
         top: 5vh;
         left: 0%;
         transform: translate(-15%, 0);
-        width: 90vw;
+        width: 80vw;
         gap: 4vw;
         max-height: 40vh;
         padding: 1vh;
