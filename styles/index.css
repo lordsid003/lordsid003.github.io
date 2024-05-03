@@ -387,7 +387,7 @@ main > .mainInfo > #connect:focus {
         padding: 3vw 4vw;
         font-size: 3vw;
         align-self: center;
-        margin-top: 2vh;
+        margin-top: 1.5vh;
         border-radius: 0.2vh;
     }
     main > .mainInfo > ul {
