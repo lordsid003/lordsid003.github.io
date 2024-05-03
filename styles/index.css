@@ -373,9 +373,12 @@ main > .mainInfo > #connect:focus {
         position: absolute;
         top: 5vh;
         left: 0%;
-        transform: translate(-8%, 0);
-        width: 70vw;
+        transform: translate(-15%, 0);
+        width: 85vw;
         gap: 4vw;
+        max-height: 40vh;
+        padding: 1vh;
+        overflow: hidden;
     }
     main > .mainInfo > .title {
         font-size: 7vw;
