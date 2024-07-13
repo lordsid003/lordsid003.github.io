@@ -346,7 +346,7 @@ main > .mainInfo > #connect:focus {
 }
 
 .projects {
-    position:absolute;
+    position: relative;
     top: 190vh;
     display: flex;
     flex-direction: column;
