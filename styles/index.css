@@ -123,6 +123,7 @@ main > .imageContainer > .star {
     background: linear-gradient(to right, aqua, 
                     rgb(0, 132, 255), #8423cf, #44eeeb); 
     -webkit-text-fill-color: transparent; 
+    background-clip: border-box;
     -webkit-background-clip: text; 
 }
 
@@ -342,6 +343,58 @@ main > .mainInfo > #connect:focus {
     right: 5vw;
     width: 35vw;
     filter: drop-shadow(0 0 3px var(--font-gray));
+}
+
+.projects {
+    position:absolute;
+    top: 95vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects > h1 {
+    font-size: 3.5vw;
+    font-weight: 500;
+    color: var(--aqua-glow);
+    font-family: "Jersey 10", sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+    margin-left: 5vw;
+}
+
+.projects > .container {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+
+.projects > .container > h2 {
+    position: relative;
+    margin-left: -6vw;
+    font-size: 4vw;
+    writing-mode: vertical-lr;
+    color: var(--low-white);
+}
+
+.projects > .container > .main {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.projects > .container > .main > p {
+    font-size: 2vw;
+    color: var(--low-white);
+    margin-left: 2vw;
+}
+
+.projects > .container > .main > video {
+    border-radius: 2vw;
+    box-shadow: 0 0 30px var(--low-transparency);
 }
 
 @media screen and (width < 1250px) and (width > 450px) {
